@@ -17,11 +17,8 @@ int main()
 	if (x <= -R)
 		y = R;
 	else
-		if (-R < x && x <= 0)
+		if (-R < x && x <= R)
 			y = R - sqrt(R * R - x * x);
-		else
-			if (0 < x && x <= R)
-				y = R - sqrt(R * R - x * x);
 			else
 				if (R < x && x <= 6)
 					y = ((9 * R) - (3 * x) - (R * x))/(6-R);
